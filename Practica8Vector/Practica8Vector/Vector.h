@@ -6,7 +6,7 @@ using namespace std;
 class Vector {
 private:
 	int* scoreNote;
-	int quantity;
+	int quantity = 5;
 public:
 
 	Vector();

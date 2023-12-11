@@ -9,7 +9,6 @@ Vector::~Vector(){
 }
 
 void Vector::introduceScore(){
-	cout << "Escriba el numero de notas a registrar: "; cin >> quantity;
 	scoreNote = new int[quantity];
 
 	for (int i = 0; i < quantity; i++) {
@@ -31,7 +30,7 @@ void Vector::calculateMedia(){
 		suma += scoreNote[i];
 		average = suma / quantity;
 	}
-	cout << "\n\nEl promedio de notas del alumno es: " << average;
+	cout << "\n\nEl promedio de notas del alumno es: " << average << endl;
 }
 
 void Vector::maximunScore(){
@@ -41,7 +40,7 @@ void Vector::maximunScore(){
 			maximun = scoreNote[i];
 		}
 	}
-	cout << "\nLa nota maxima es: " << maximun;
+	cout << "\nLa nota maxima es: " << maximun << endl;
 }
 
 void Vector::minimunScore(){
@@ -51,5 +50,5 @@ void Vector::minimunScore(){
 			minimun = scoreNote[i];
 		}
 	}
-	cout << "\nLa nota minima es: " << minimun;
+	cout << "\nLa nota minima es: " << minimun << endl;
 }
